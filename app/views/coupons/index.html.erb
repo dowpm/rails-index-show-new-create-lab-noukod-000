@@ -1,1 +1,3 @@
 <h2> All coupons </h2>
+<% @couons.each do |c| %>
+  <h3><%= c.coupon_code %> - <%= c.code %> </h3>
