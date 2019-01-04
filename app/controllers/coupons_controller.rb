@@ -8,7 +8,8 @@ class CouponsController < ApplicationController
   end
 
   def create
-
+    Coupon.create params[:coupon]
+    redirect_to coupon_path
   end
 
   def show
