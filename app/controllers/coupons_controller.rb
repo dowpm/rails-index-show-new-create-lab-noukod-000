@@ -9,7 +9,7 @@ class CouponsController < ApplicationController
 
   def create
     # binding.pry
-    coupon = Coupon.create params[:coupon]
+    coupon = Coupon.create(params[:coupon])
     redirect_to coupon_path(coupon)
   end
 
